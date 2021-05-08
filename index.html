@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>বাংলা ওয়ার্ড থেকে ইউনিকোড</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="src/bwd2uni.js"></script>
+	</head>
+	<body>
+		
+		<div style="margin:auto; width:98%; padding:10px;">
+			<h2 style="padding-bottom: 20px; color: #8080c0"><b>বাংলা ওয়ার্ড</b> হরফ থেকে <b>ইউনিকোড</b> হরফে পরিবর্তন করুন </h2>
+			
+				<div style="padding-bottom: 20px; color: dark grey;">
+					<p>এই application সম্পূর্ণ সঠিক ভাবে ইউনিকোড হরফে পরিবর্তন করতে পারে না, একথা ঠিক।
+					<br>তবে বাংলাওয়ার্ড সফটওয়্যার-এ লেখা ফাইল যদি বিকৃত হয়ে গিয়ে থাকে, তবে এই application কিছুটা পুনরুদ্ধার করার চেষ্টা করবে।</p>
+					<p>নিছক শখের কাজ, চূড়ান্ত সমস্যা পড়ে চটজলদি লেখা । যদি কার্যকরী না হয়, তবে ক্ষমাপ্রার্থী :-)</p>
+				</div>
+			
+			
+			<textarea 
+				id="textToConvert" 
+				class="form-control rounded-0" 
+				style="float:left; width:50%; height:500px; resize: none; padding:10px" 
+				placeholder="বাংলা ওয়ার্ড সফটওয়্যার-এ লেখা text এখানে paste করুন ..."
+				onkeyup="strReplace('textToConvert', 'textFinal');"></textarea>
+			
+			<textarea 
+				id="textFinal" 
+				class="form-control rounded-0" 
+				style="float:left; width:50%; height:500px; resize:none; padding:10px"></textarea>
+		</div>
+	</body>
+</html>
